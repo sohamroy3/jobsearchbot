@@ -1,0 +1,14 @@
+{
+  "name": "jobsearchbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "soham roy",
+  "license": "ISC",
+  "dependencies": {
+    "parramato": "^1.0.11"
+  }
+}

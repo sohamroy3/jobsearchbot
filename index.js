@@ -1,7 +1,9 @@
+
+
 require("parramato").Server({
-    root:"https://yourdomain.com/path",//pixy link
+    root:"https://pixie.jubi.ai/jobsearchbot",//pixie link
     socketLocalPath: '/socket',///
-    httpPort:4000,//server running port
+    httpPort:4445,//server is running on port no 4445
     cluster:false,
     dbUri:'mongodb://root:root@127.0.0.1:27017/pigaro',//
     staticDirectory:__dirname+"/static",

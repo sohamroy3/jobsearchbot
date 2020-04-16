@@ -118,7 +118,7 @@
         owl: "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css",
         bootstrap: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css",
         owlTheme: "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css",
-        pmTheme: "https://parramato.com/bot-view/job search_839521566830/dev/css/theme.css"
+        pmTheme: "https://parramato.com/bot-view/job_search_377703808087/dev/css/theme.css"
     });
     loadJs({
         crypt: "https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js",
@@ -128,8 +128,8 @@
         socket: "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js",
         responsiveVoice :"https://code.responsivevoice.org/responsivevoice.js",
         nluComponent:"https://unpkg.com/compromise@latest/builds/compromise.min.js",
-        bundle: "https://parramato.com/bot-view/job search_839521566830/dev/js/bundle.js",
-        script: "https://parramato.com/bot-view/job search_839521566830/dev/js/script.js",
+        bundle: "https://parramato.com/bot-view/job_search_377703808087/dev/js/bundle.js",
+        script: "https://parramato.com/bot-view/job_search_377703808087/dev/js/script.js",
     });
                 window.jubiModal={
                 static:{

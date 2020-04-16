@@ -1,0 +1,10 @@
+#Dealing with conflict while working with centralised workflow
+
+git pull --rebase origin master
+git status
+git mergetool
+
+# edit the code and save the file :wq
+
+git rebase --continue
+git push origin master

@@ -9,7 +9,7 @@ require("parramato").Server({
     staticDirectory:__dirname+"/static",
     adapterPath:"/adapter",
     adapterDirectory:__dirname+"/adapter",
-    projectId:"job search_839521566830",///////////projectid changed
+    projectId:"job_search_377703808087",///////////projectid changed
     dashbotKey:"VxtYPVW6168LIiXwqpIku9wE",
     directMultiplier:1,
     fallbackMultiplier:0.8,

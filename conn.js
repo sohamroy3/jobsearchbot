@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
  
 // make a connection
-mongoose.connect('mongodb://youruser:yourpassword@localhost:27017/job');
+mongoose.connect('mongodb://youruser:yourpassword@localhost:27017/job'); //youruser:yourpassword@
  
 /// get reference to database
 var db = mongoose.connection;
@@ -22,9 +22,9 @@ db.once('open', function() {
     var Book = mongoose.model('Book', BookSchema, 'bookstore');
  
     // documents array
-    var books = [{ name: 'Mongoose Tutorial', price: 10, quantity: 25 },
-                    { name: 'NodeJS tutorial', price: 15, quantity: 5 },
-                    { name: 'MongoDB Tutorial', price: 20, quantity: 2 }];
+    var books = [{ name: '1 Mongoose Tutorial', price: 10, quantity: 25 },
+                    { name: '2 NodeJS tutorial', price: 15, quantity: 5 },
+                    { name: '3 MongoDB Tutorial', price: 20, quantity: 2 }];
  
     // save multiple documents to the collection referenced by Book Model
     Book.collection.insert(books, function (err, docs) {

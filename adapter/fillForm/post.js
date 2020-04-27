@@ -1,4 +1,18 @@
 module.exports = {
+    name: (modal)=>{
+        return new Promise(async function (resolve, reject){
+        
+           modal.tags.name=modal.data;
+                
+                delete(modal.stage)
+                resolve(modal)  
+            
+            
+           
+            console.log(modal);
+                  
+        })
+    },
     emailValidation: (modal)=>{
         return new Promise(async function (resolve, reject){
             let regex=/^(.+)@(.+)$/;
@@ -14,6 +28,6 @@ module.exports = {
             console.log(modal);
                   
         })
-    },
+    }
            
 }

@@ -18,11 +18,11 @@ module.exports = {
             modal.reply= {
                 type: "text",
                 text:modal.tags.name+", Your Input Email is "+modal.tags.email
-            }  
+            },
             modal.reply= {
                 type: "text",
                 text:"Your input phone Number is "+modal.tags.email
-            }   
+            },  
             modal.reply= {
                 type: "text",
                 text:"Your data is sent to our 52 linked companies.Now you can close the window"

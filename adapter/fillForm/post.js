@@ -3,8 +3,8 @@ var emailValidation=(modal)=>{
     
         return new Promise(async function (resolve, reject){
             console.log(modal);
-            delete(model.stage)
-             resolve(model)
+            delete(modal.stage)
+             resolve(modal)
             
         })
 

@@ -17,7 +17,7 @@ module.exports = {
         return new Promise(async function (resolve, reject){
             modal.reply= {
                 type: "text",
-                text:modal.tags.name+",Your data is sent to our 52 linked companies.Now you can close the window"
+                text:modal.tags.name+", Your data is sent to our 52 linked companies.Now you can close the window"
             }                 
                 
                 resolve(modal)

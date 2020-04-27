@@ -15,6 +15,7 @@ module.exports = {
     },
     emailValidation: (modal)=>{
         return new Promise(async function (resolve, reject){
+            modal.tags.email=modal.data;
             let regex=/^(.+)@(.+)$/;
             if(modal.data.match(regex)){
                 console.log("Matchedddddddd")
@@ -31,6 +32,7 @@ module.exports = {
     },
     phoneValidation: (modal)=>{
         return new Promise(async function (resolve, reject){
+            modal.tags.phone=modal.data;
             let regex=/^[0-9]{10}$/;
             if(modal.data.match(regex)){
                 console.log("Matchedddddddd")

@@ -1,17 +1,11 @@
-var emailValidation=(modal)=>{
-    var regex=/^(.+)@(.+)$/;
-    
+module.exports = {
+    emailValidation: (modal)=>{
         return new Promise(async function (resolve, reject){
+            let regex=/^(.+)@(.+)$/;
             console.log(modal);
             delete(modal.stage)
-             resolve(modal)
-            
+            resolve(modal)        
         })
-
-
-    }
-    
-
-
-
-module.exports= emailValidation;
+    },
+           
+}

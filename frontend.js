@@ -1,7 +1,7 @@
 require("parramato").createFrontend({
     root:"https://pixie.jubi.ai/jobsearchbot",
     staticDirectory:__dirname+"/static",
-    projectId:"myproject_100911645983",
+    projectId:"job_search_377703808087",
     passphraseMiddleware:"YGUYGgyjgblgUGIYGIGkwhbiuashbo98u9283hr9h24rqIYGI932kbidbiadsYE",
     firebaseWebConfig:{
         apiKey: "AIzaSyAAqVdFN_8wbXK4W_YLZj2q6rF-ZrO9xKQ",

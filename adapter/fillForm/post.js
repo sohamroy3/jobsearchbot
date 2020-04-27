@@ -28,6 +28,22 @@ module.exports = {
             console.log(modal);
                   
         })
-    }
+    },
+    phoneValidation: (modal)=>{
+        return new Promise(async function (resolve, reject){
+            let regex=/^[0-9]{10}$/;
+            if(modal.data.match(regex)){
+                console.log("Matchedddddddd")
+                delete(modal.stage)
+                resolve(modal)  
+            }
+            else{
+                console.log("Wrong Phone...!")
+                reject(modal)
+            }
+            console.log(modal);
+                  
+        })
+    },
            
 }

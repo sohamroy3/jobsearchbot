@@ -29,9 +29,7 @@ module.exports.pincodeInfo = function pInfo(pincode){
   
         var options = { method: 'GET',
           url: 'http://postalpincode.in/api/pincode/' + pincode,
-          headers: 
-           { 'Postman-Token': '5fd23847-b60b-40b8-b0be-20972f0e5bbf',
-             'cache-control': 'no-cache' } };
+           };
   
         request(options, function (error, response, body) {
           if (error) throw new Error(error);

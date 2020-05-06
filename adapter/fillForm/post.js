@@ -1,4 +1,4 @@
-var helper = require('././commonHelper/helper.js')
+var helper = require('../../commonHelper/helper.js')
 module.exports = {
     name: (modal)=>{
         return new Promise(async function (resolve, reject){

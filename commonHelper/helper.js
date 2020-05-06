@@ -1,25 +1,57 @@
-module.exports={
+// module.exports={
    
    
-    pincodeInfo:(pincode)=>{
-        return new Promise(function(resolve, reject){
-            var request = require("request");
+//     pincodeInfo:(pincode)=>{
+//         return new Promise(function(resolve, reject){
+//             var request = require("request");
     
-            var options = { 
-                method: 'GET',
-                url: 'http://postalpincode.in/api/pincode/' + pincode,
-                headers: 
-                    {
+//             var options = { 
+//                 method: 'GET',
+//                 url: 'http://postalpincode.in/api/pincode/' + pincode,
+//                 headers: 
+//                     {
 
-                    } 
-            };
+//                     } 
+//             };
     
-            request(options, function (error, response) {
-            if (error) throw new Error(error);
-            console.log(response.body);
-            return response.body.status;
-            });
+//             request(options, function (error, response) {
+//             if (error) throw new Error(error);
+//             console.log(response.body);
+//             return response.body.status;
+//             });
     
-        })
-    }
-}
+//         })
+//     }
+// }
+module.exports.pincodeInfo = function pInfo(pincode){
+    return new Promise(function(resolve, reject){
+      var request = require("request");
+  
+        var options = { method: 'GET',
+          url: 'http://postalpincode.in/api/pincode/' + pincode,
+          headers: 
+           { 'Postman-Token': '5fd23847-b60b-40b8-b0be-20972f0e5bbf',
+             'cache-control': 'no-cache' } };
+  
+        request(options, function (error, response, body) {
+          if (error) throw new Error(error);
+          console.log(body);
+          console.log(typeof body)
+          try{//{"Message":"No records found","Status":"Error","PostOffice":null}
+            if(JSON.parse(body).Status == "Success"){
+              console.log("PIN API WORKING...")
+              resolve(JSON.parse(body).PostOffice[0])
+            }
+            else{
+             resolve("Error") 
+            }
+          }
+          catch(e){
+            resolve("Error")
+          }
+          
+          
+        });
+  
+    })
+  }

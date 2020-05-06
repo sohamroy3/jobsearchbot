@@ -48,17 +48,17 @@ module.exports = {
                   
         })
     },
-    pincode:(model)=>{
+    pincode:(modal)=>{
         return new Promise(async function(resolve, reject){
-            let pinInfo = await helper.pincodeInfo(model.data)
+            let pinInfo = await helper.pincodeInfo(modal.data)
             console.log(pinInfo)
             if(pinInfo == "Error"){
-                reject(model)
+                reject(modal)
             }
             else{
-                model.tags.pincode = model.data
-                delete(model.stage)
-                resolve(model)
+                modal.tags.pincode = modal.data
+                delete(modal.stage)
+                resolve(modal)
             }
         })
     },

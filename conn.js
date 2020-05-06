@@ -42,48 +42,48 @@ db.once('open', function() {
   ////
   
 
-///////////////////////BUTTON
-name:(model)=>{
-  console.log(model, "Rollover Pre..name........!")
+// ///////////////////////BUTTON
+// name:(model)=>{
+//   console.log(model, "Rollover Pre..name........!")
 
-      return new Promise(function(resolve, reject){
-          try{
-              if (model.tags.start == "salutation"){
-                  model.reply = {
-                  type: 'button',
-                  text: "And how should I address you 😊 ?",
-                  next: {
-                      data: [
-                          {
-                              data: "male|Mr",
-                              text: "Mr."
-                          },
-                          {
-                              data: "female|Ms",
-                              text: "Ms."
-                          },
-                          {
-                              data: "female|Mrs",
-                              text: "Mrs."
-                          },
-                      ]
-                  }
-              }
-              }
-              else if(model.tags.start == "tryAgain"){
-                  model.reply={
-                      type : "text",
-                      text : model.tags.reEnterName,
-                  }
-              }
-              else{
-                  model.reply=model.data
-                  model.reply.type="text"
-              }
-              resolve(model)
-          }
-          catch(e){
-              reject(model)
-          }
-      })
-  },
+//       return new Promise(function(resolve, reject){
+//           try{
+//               if (model.tags.start == "salutation"){
+//                   model.reply = {
+//                   type: 'button',
+//                   text: "And how should I address you 😊 ?",
+//                   next: {
+//                       data: [
+//                           {
+//                               data: "male|Mr",
+//                               text: "Mr."
+//                           },
+//                           {
+//                               data: "female|Ms",
+//                               text: "Ms."
+//                           },
+//                           {
+//                               data: "female|Mrs",
+//                               text: "Mrs."
+//                           },
+//                       ]
+//                   }
+//               }
+//               }
+//               else if(model.tags.start == "tryAgain"){
+//                   model.reply={
+//                       type : "text",
+//                       text : model.tags.reEnterName,
+//                   }
+//               }
+//               else{
+//                   model.reply=model.data
+//                   model.reply.type="text"
+//               }
+//               resolve(model)
+//           }
+//           catch(e){
+//               reject(model)
+//           }
+//       })
+//   },

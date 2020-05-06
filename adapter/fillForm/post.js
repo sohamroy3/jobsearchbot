@@ -1,3 +1,4 @@
+var helper = require('../../commonHelper/helper.js')
 module.exports = {
     name: (modal)=>{
         return new Promise(async function (resolve, reject){
@@ -45,6 +46,20 @@ module.exports = {
             }
             console.log(modal);
                   
+        })
+    },
+    pincode:(model)=>{
+        return new Promise(async function(resolve, reject){
+            let pinInfo = await helper.pincodeInfo(model.data)
+            console.log(pinInfo)
+            if(pinInfo == "Error"){
+                reject(model)
+            }
+            else{
+                model.tags.pincode = model.data
+                delete(model.stage)
+                resolve(model)
+            }
         })
     },
            

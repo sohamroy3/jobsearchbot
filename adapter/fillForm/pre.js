@@ -2,7 +2,7 @@ module.exports = {
 
     namePre:(modal)=>{
         return new Promise(async function (resolve, reject){
-            model.reply = {
+            modal.reply = {
                                   type: 'button',
                                   text: "And how should I address you 😊 ?",
                                   next: {

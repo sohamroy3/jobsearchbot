@@ -1,6 +1,6 @@
 module.exports = {
 
-    name:(modal)=>{
+    namePre:(modal)=>{
         return new Promise(async function (resolve, reject){
             model.reply = {
                                   type: 'button',

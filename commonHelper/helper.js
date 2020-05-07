@@ -35,7 +35,7 @@ module.exports.pincodeInfo = function pInfo(pincode){
           if (error) throw new Error(error);
           console.log(body);
           console.log(typeof body);
-          console.log(response);
+          console.log(response.body);
           try{//{"Message":"No records found","Status":"Error","PostOffice":null}
             if(JSON.parse(body).Status == "Success"){
               console.log("PIN API WORKING...")

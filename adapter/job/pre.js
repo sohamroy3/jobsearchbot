@@ -12,31 +12,31 @@ module.exports = {
                         data : [
                             {
                                 title: "Buisness",
-                                text: "Just type in your Vehicle Registration number. Simple as that.",
+                                text: "If you are that type of a person who can sell anything!",
                                 buttons: [
                                     {
                                         text: "SELECT",
-                                        // data: "enter registration number",
+                                         data: "enter registration number",
                                     },
                                     ]
                             },
                             {
                                 title: "Information Technology",
-                                text: "Upload a pic of your number plate and I will fetch your details.",
+                                text: "If you are technology geek",
                                 buttons: [
                                     {
                                         text: "SELECT",
-                                        // data: "upload picture of number plate",
+                                         data: "upload picture of number plate",
                                     },
                                     ]
                             },
                             {
                                 title: "Government jobs",
-                                text: "Upload front of your RC card for policy in 2 minutes",
+                                text: "If you want to go for government jobs",
                                 buttons: [
                                     {
                                         text: "SELECT",
-                                        // data: "upload rc card",
+                                         data: "upload rc card",
                                     },
                                     ]
                             },
